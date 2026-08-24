@@ -82,7 +82,7 @@ namespace TootTallyLeaderboard
             AssetManager.LoadAssets(Path.Combine(Path.GetDirectoryName(Instance.Info.Location), "Assets"));
 
             ShouldUpdateSession = DateTime.TryParse(Instance.option.SessionDate.Value, out DateTime lastSessionDatetime)
-                ? lastSessionDatetime.Date.CompareTo(DateTime.Now.Date) < 0
+                ? lastSessionDatetime.Date.CompareTo(DateTime.Now.Date) != 0
                 : true; // Just force the session update if we can't parse it. It's fine.
             //Will make this async before making it active
             _harmony.PatchAll(typeof(LeaderboardFactory));
