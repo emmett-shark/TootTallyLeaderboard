@@ -505,7 +505,7 @@ namespace TootTallyLeaderboard
                     };
                     _tempAllReplayData.Add(convertedData);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     Plugin.LogError($"Couldn't parse  replay {cachedData.filePath}.");
                     CachedReplays.DeleteReplayFromSongHash(cachedData);

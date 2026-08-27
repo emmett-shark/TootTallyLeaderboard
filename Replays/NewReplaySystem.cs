@@ -35,7 +35,7 @@ namespace TootTallyLeaderboard.Replays
         public float GetReplaySpeed { get => _replayData.gamespeedmultiplier; }
 
         private bool _wasTouchScreenUsed;
-        private bool _wasTabletUsed;
+        private bool _wasTabletUsed = false;
         private int _maxCombo;
         private bool _isLastNote;
         public bool _isTooting;
