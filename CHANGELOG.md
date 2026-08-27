@@ -1,5 +1,10 @@
 #### Changelog:
 
+`v1.2.7` -> `v1.2.8`
+```diff
++ Fix daily tt counter if from Europe
+```
+
 `v1.2.6` -> `v1.2.7`
 
 ```diff
